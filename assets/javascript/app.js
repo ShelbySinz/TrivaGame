@@ -105,7 +105,7 @@ $(document).ready(function () {
             for (var i = 0; i < pick.choice.length; i++) {
                 var userChoice = $("<button>");
                 userChoice.addClass("answerchoice");
-                userChoice.html(pick.choice[i]);
+                userChoice.text(pick.choice[i]);
                 //assign array position to it so can check answer
                 userChoice.attr("data-guessvalue", i);
                 $("#answer").append(userChoice);
